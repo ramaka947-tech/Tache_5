@@ -127,33 +127,36 @@ header{
     
 }
 
-form{
-    box-shadow: white;
+form {
     background-color: white;
-    border: 1px solid black;
     border-radius: 10px;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    max-width: 900px; 
+    margin: 20px auto;
     padding: 15px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 input,
 select{
+
     background: beige;
     color: black;
     margin: auto;
     text-align: center;
-    padding: 20px 30px;
-    border: 1px solid black;
+     flex: 1 1 150px;
+    padding: 12px;
     border-radius: 5px;
     
 }
 
 input[type="search"]{
     background-color: #ff7f31;
+    color: white;
     cursor: pointer;
-    
+    flex: 1 1 100%;
 }
 
 .property-texte{
@@ -280,4 +283,99 @@ footer{
     padding: 15px;         
     width: 100%;
     font-weight: bold;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .conteneur {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .conteneur-properties {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn_milieu button {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .login {
+        margin-left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 15px;
+        border-radius: 10px;
+    }
+
+    .hero-texte h1 {
+        font-size: 20px;
+    }
+
+    .hero-texte p {
+        font-size: 14px;
+    }
+
+    .btn_milieu {
+        margin-top: 20px;
+    }
+
+    .btn_milieu button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .conteneur {
+        grid-template-columns: 1fr;
+    }
+
+    .conteneur-properties {
+        grid-template-columns: 1fr;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
