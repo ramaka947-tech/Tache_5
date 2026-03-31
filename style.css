@@ -131,11 +131,11 @@ form {
     background-color: white;
     border-radius: 10px;
     width: 100%;
-    max-width: 900px; /* limite la largeur */
+    max-width: 900px; 
     margin: 20px auto;
     padding: 15px;
     display: flex;
-    flex-wrap: wrap; /* 🔥 permet de passer à la ligne */
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -146,7 +146,7 @@ select{
     color: black;
     margin: auto;
     text-align: center;
-     flex: 1 1 150px; /* 🔥 responsive automatique */
+     flex: 1 1 150px;
     padding: 12px;
     border-radius: 5px;
     
@@ -286,10 +286,9 @@ footer{
 }
 
 
-/* 📱 TABLETTE */
+
 @media (max-width: 1024px) {
 
-    /* Grid biens */
     .conteneur {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -298,16 +297,14 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Boutons */
     .btn_milieu button {
         width: auto;
     }
 }
 
-/* 📱 MOBILE */
+
 @media (max-width: 768px) {
 
-    /* CONTACT BAR */
     .contact {
         flex-direction: column;
         align-items: flex-start;
@@ -319,7 +316,6 @@ footer{
         margin-left: 0;
     }
 
-    /* MENU */
     .menu {
         flex-direction: column;
         align-items: flex-start;
@@ -331,7 +327,6 @@ footer{
         gap: 10px;
     }
 
-    /* HERO */
     .hero {
         height: auto;
         padding: 40px 15px;
@@ -346,7 +341,6 @@ footer{
         font-size: 14px;
     }
 
-    /* BOUTONS */
     .btn_milieu {
         margin-top: 20px;
     }
@@ -356,7 +350,6 @@ footer{
         margin: 10px 0;
     }
 
-    /* FORM */
     form {
         flex-direction: column;
         gap: 10px;
@@ -368,17 +361,14 @@ footer{
         padding: 12px;
     }
 
-    /* TYPES DE BIENS */
     .conteneur {
         grid-template-columns: 1fr;
     }
 
-    /* PROPERTIES */
     .conteneur-properties {
         grid-template-columns: 1fr;
     }
 
-    /* CARTE */
     .details {
         flex-direction: column;
     }
